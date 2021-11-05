@@ -1,0 +1,6 @@
+about me
+my tecnology styded: slider
+my projects for tecnology: html/css/sass/bootstrap, js/ts
+page 1, page 2, 
+contact: email, linkedin, GitHub, whatsApp, 
+
