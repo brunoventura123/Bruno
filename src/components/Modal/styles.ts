@@ -12,13 +12,7 @@ export const Container = styled.div<{modal:boolean}>`
     justify-content:center;
     align-items:center;
     transition:all ease .5s;
+    z-index:91;
 
-    .close{
-        position:absolute;
-        right:0;
-        top:0;
-        margin-right: 170px;
-        margin-top: 80px;
-        cursor:pointer;
-    }
+    
 `

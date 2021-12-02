@@ -6,8 +6,8 @@ import WS from '../../assets/images/S-W.jpg'
 import CE from '../../assets/images/firebase.jpg'
 import H from '../../assets/images/HTML-CSS.jpg'
 import R from '../../assets/images/Creactjs.jpg'
-
+import Banco from '../../assets/images/banco.jpg'
 
 export const Photo = [
-    H, R, B, J, T, WS, CE, G
+    H, R, B, J, T, WS, CE, G, Banco
 ]

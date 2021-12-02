@@ -8,8 +8,8 @@ type Props = {
 
 export const Theme = ({children}: Props) => {
     return(
-        <C.Container>
-                <Header pro={0}/>
+        <C.Container >
+                <Header/>
                 <C.PrincipalArea>
                     {children}
                 </C.PrincipalArea>

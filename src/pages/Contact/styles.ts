@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div<{sends:boolean}>`
-    height:calc(100vh - 100px);
+    height:calc(100vh - 80px);
     margin:auto;
-    margin-top:100px;
+    margin-top:80px;
     display:flex;
     align-items:center;
     justify-content:space-around;
     flex-direction:row;
-    overflow:auto;
+    overflow:hidden;
     color:#FFF;
 
     .modalsucsses{
@@ -23,6 +23,7 @@ export const Container = styled.div<{sends:boolean}>`
         align-items:center;
         justify-content:center;
         transition:all ease .3s;
+        z-index:94;
         
         .sucsses{
             position:fixed;
@@ -63,6 +64,14 @@ export const Container = styled.div<{sends:boolean}>`
             }
         }
     }
+
+    @media(max-width:760px){
+        flex-direction:column;
+        justify-content:flex-start;
+        overflow:auto;
+        height:100%;
+        padding-top:30px;
+    }
     
 `
 export const FormArea = styled.div<{colors:string}>`
@@ -74,7 +83,7 @@ export const FormArea = styled.div<{colors:string}>`
     .contactArea{
         width: 300px;
         height:auto;
-        background-color: #333;
+        background-color: #FFF;
         border-radius:10px;
         
     }
@@ -92,7 +101,7 @@ export const FormArea = styled.div<{colors:string}>`
     #form{
         display:flex;
         flex-direction:column;
-        background-color:#F3F3F3;
+        background-color:transparent;
         padding-top:20px;
         border-bottom-right-radius:10px;
         border-bottom-left-radius: 10px;
@@ -104,7 +113,7 @@ export const FormArea = styled.div<{colors:string}>`
             outline:0;
             padding: 10px 5px;
             font-size:16px;
-            background-color: #555;
+            background-color: #666;
             resize:none;
             border:${props=>props.colors};
             border-radius:5px;
@@ -134,19 +143,27 @@ export const FormArea = styled.div<{colors:string}>`
             height:150px;
         }
     }
-   
+    @media(max-width:450px){
+        .contact{
+            font-size:16px;
+        }
+        input, textarea{
+            font-size:14px !important;
+        }
+        input[type="submit"]{
+            font-size:14px;
+        }
+    }
+
 `
 
 export const SocialArea = styled.div`
     flex:1;
     border-left:1px solid #f1c40f;
-    padding-left:30px;
     height: 80%;
     padding:0 30px;
     text-align:center;
     
-    
-
     .socialarea{
         display:flex;
         justify-content: space-around;
@@ -186,5 +203,39 @@ export const SocialArea = styled.div`
     footer{
         color:#999;
         margin-top:100px;
+    }
+
+    @media(max-width:1000px){
+        .socialarea{
+            padding: 0 30px;
+        }
+    }
+    @media(max-width:760px){
+            border:0;
+            margin:20px 30px;
+            margin-top:30px;
+            border-top:1px solid #f1c40f;
+    }
+    @media(max-width:450px){
+        padding:0 10px;
+        margin-top: 50px;
+        .socialarea{
+            padding:0;
+            font-size:14px;
+            margin-top:50px;
+
+            img{
+                width:30px;
+                height:30px;
+            }
+        }
+        p{
+            width:100%;
+            font-size:14px;
+        }
+        footer{
+            font-size:14px;
+            margin-top:50px;
+        }
     }
 `

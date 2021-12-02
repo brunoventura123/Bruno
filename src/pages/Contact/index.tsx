@@ -15,7 +15,7 @@ export const Contact = () => {
     const [color, setColor] = useState('')
 
     const regName = /^([A-zÁ-ú]{2,})\s([A-zÁ-ú\s]{2,})$/g
-    const regEmail = /^([A-z0-9\-?]{1,})\@([A-z0-9]{1,})\.([A-z0-9]{1,})(\.[A-z]{1,})?$/g
+    const regEmail = /^([A-z0-9\-?]{1,})@([A-z0-9]{1,})\.([A-z0-9]{1,})(\.[A-z]{1,})?$/g
 
 
     useEffect(()=>{
@@ -31,7 +31,7 @@ export const Contact = () => {
     const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
-        if( message !== '' && regName.test(name) && regEmail.test(email)){
+        if( regName.test(name) && regEmail.test(email) && message !== ''){
             setSend(true)
             setName('')
             setEmail('')
@@ -64,6 +64,7 @@ export const Contact = () => {
                             placeholder="Nome completo"
                             value={name}
                             onChange={(e)=>setName(e.target.value)}
+                            tabIndex={0}
                             />
                         <input 
                             required
@@ -82,7 +83,8 @@ export const Contact = () => {
                             />
                         <input 
                             type="submit" 
-                            value="Enviar" 
+                            value="Enviar"
+                            title="Enviar formulário"
                             />
                     </form>
                     </div>

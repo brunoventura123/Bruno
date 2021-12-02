@@ -1,16 +1,26 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height:calc(100vh - 100px);
-    padding:20px 70px;
-    margin-top:100px;
+    height:calc(100vh - 80px);
+    padding:20px 30px;
+    margin-top:80px;
     display:flex;
     align-items:center;
     justify-content:center;
-    flex-direction:row;
-    overflow:auto;
     color:#FFF;
-    
+    overflow:hidden;
+
+    @media(max-width:1000px){
+        overflow:auto;
+        align-items:start;
+    }
+    @media(max-width:770px){
+        flex-direction:column;
+        justify-content:start;
+    }
+    @media(max-width:450px){
+        padding: 20px 10px;
+    }
 `
 export const SliderArea = styled.div`
     width:50%;
@@ -18,7 +28,12 @@ export const SliderArea = styled.div`
     align-items:center;
     justify-content:center;
     margin-right:30px;
+    flex-wrap:wrap;
+    
 
+    @media(max-width:770px){
+        width:100%;
+    }
 `
 
 export const InfoArea = styled.div`
@@ -63,31 +78,45 @@ export const InfoArea = styled.div`
         border-radius:10px;
         margin-right:10px;
         margin-bottom:10px;
-        font-weight:600;
+        font-weight:bold;
 
         &:hover{
             opacity:0.8;
         }
+        
     }
-    
-`
-export const ModalArea = styled.div`
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    box-shadow:0px 0px 5px #f1c40f;
-    width:80vw;
-    height:80vh;
-    background-color:#222;
-    border-radius:30px;
+    @media(max-width:1000px){
+        justify-content:start;
+        padding:0 30px;
+    }
+    @media(max-width:770px){
+        width:100%;
+        border:0;
+        margin-top:50px;
+        border-top: 1px solid #f1c40f;
 
-    img{
-        width:auto;
-        height:100%;
+        button{
+            width:200px;
+        }
+       
+            .firstInfo{
+                h2{
+                    font-size:25px;
+                }
+                p{
+                    font-size:16px;
+                }
+            }
+        @media(max-width:450px){
+            padding:0 10px;
+        }
     }
 `
 export const ScreeanWarning = styled.div`
     text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
     .emoji{
         font-size:50px;
@@ -97,4 +126,8 @@ export const ScreeanWarning = styled.div`
 export const PhotoList = styled.div`
     display:flex;
     flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    overflow:auto;
+    padding:5px;
 `

@@ -1,5 +1,4 @@
 import * as C from './styles'
-import React from 'react'
 import { Theme } from '../../components/Theme'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
@@ -11,59 +10,23 @@ import {Info} from '../../Info'
 
 
 
-
 export const Technology = () => {
     
     const [titleInfo, setTitleInfo] = useState(Info[0].title)
     const [textInfo, setTextInfo] = useState(Info[0].text)
+    const [color, setColor] = useState(Info[0].color)
     const [loading, setLoading] = useState(false)
     const [photos, setPhotos] = useState<Photo[]>([])
+    let info = 'images'
 
-    const cathPhoto = (e:JSON) =>{
-        let item = e.toString()
-            
-        if(item.indexOf('1.png') > -1){
-            setTitleInfo(Info[0].title)
-            setTextInfo(Info[0].text)
-        } else if(item.indexOf('2.png') > -1){
-            setTitleInfo(Info[1].title)
-            setTextInfo(Info[1].text)
-        } else if(item.indexOf('3.png') > -1){
-            setTitleInfo(Info[2].title)
-            setTextInfo(Info[2].text)
-        } else if(item.indexOf('4.png') > -1){
-            setTitleInfo(Info[3].title)
-            setTextInfo(Info[3].text)
-        } else if(item.indexOf('5.png') > -1){
-            setTitleInfo(Info[4].title)
-            setTextInfo(Info[4].text)
-        } else if(item.indexOf('6.png') > -1){
-            setTitleInfo(Info[5].title)
-            setTextInfo(Info[5].text)
-        } else if(item.indexOf('7.png') > -1){
-            setTitleInfo(Info[6].title)
-            setTextInfo(Info[6].text)
-        } else if(item.indexOf('8.png') > -1){
-            setTitleInfo(Info[7].title)
-            setTextInfo(Info[7].text)
-        } else if(item.indexOf('A.png') > -1){
-            setTitleInfo(Info[8].title)
-            setTextInfo(Info[8].text)
-        } else if(item.indexOf('B.png') > -1){
-            setTitleInfo(Info[9].title)
-            setTextInfo(Info[9].text)
-        } 
-    
+const getPhotos = async (info: string | undefined)=>{
+    setLoading(true)
+    setPhotos(await Photos.getAll(info)) 
+    setLoading(false)
 }
         
-        
     useEffect(()=>{
-        const getPhotos = async ()=>{
-            setLoading(true)
-            setPhotos(await Photos.getAll()) 
-            setLoading(false)
-        }
-        getPhotos()
+        getPhotos(info)
     },[])
 
     
@@ -79,13 +42,16 @@ export const Technology = () => {
                         </C.ScreeanWarning>
                     }
                     {!loading && photos.length > 0 &&
-                        <C.PhotoList>
+                        <C.PhotoList >
                             {photos.map((item, index)=>(
                                 <PhotoItem 
-                                    onClick={cathPhoto}  
+                                    onClick={()=>{
+                                        setTitleInfo(Info[index].title)
+                                        setTextInfo(Info[index].text)
+                                        setColor(Info[index].color)}}
                                     key={index} 
                                     url={item.url}
-                                       />
+                                />
                             ))}
                         </C.PhotoList>
                     }
@@ -99,18 +65,15 @@ export const Technology = () => {
                     
                 </C.SliderArea>
                 <C.InfoArea>
-                    
-                     
                     {Info.length > 0 &&
                     <>
                     <div  className="firstInfo">
-                        <h2>{titleInfo}</h2>
+                        <h2 style={{color:`${color}`}}>{titleInfo}</h2>
                         <p>{textInfo}</p>
                     </div>
                     <div className="buttons">
-                    <div><Link to="/projects"><button >Projetos</button></Link>
-                    <Link to="/certificates"><button style={{backgroundColor:'#B8960C'}}>Certificados</button></Link>
-                    </div>
+                        <Link to="/projects"><button title="Veja os projetos feitos por Bruno Ventura">Projetos</button></Link>
+                        <Link to="/certificates"> <button className="certcolor" style={{backgroundColor:'#B8960C', color:'#02044A'}} title="Veja os certificados de Bruno Ventura">Certificados</button></Link>
                     </div>
                     </>
                     }

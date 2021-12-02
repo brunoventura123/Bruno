@@ -10,7 +10,6 @@ export const Modal = ({children, modal, onClick}:Props) => {
     return(
         <C.Container modal={modal} onClick={onClick}>
             {children}
-            <div className="close">✖️</div>
         </C.Container>
     )
 }

@@ -1,31 +1,34 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import * as C from './styles'
 import { Theme } from '../../components/Theme'
 import React from 'react'
 import {Photo} from './photo'
 
 export const Projects = () => {
+    
+   
     return(
         <Theme>
             <C.Container>
                 <C.ProjectArea>
-                <h3>Todos os projetos estão no GitHub/GitHub Pages</h3>
+                <h3>Todos os projetos estão no GitHub/GitHub Pages - Total: ({Photo.length})</h3>
                     <div className="project">
                         {Photo.map((item, index)=>
                             <a 
+                                key={index}
                                 href={item.url} 
                                 target="_blank" 
                                 rel="noreferrer"
                                 >
-                                <img  
-                                key={index} 
+                                <img   
                                 src={item.img} 
                                 alt="" 
-                                
-                                /></a>
+                                />
+                                <div className="desc">{item.desc}</div>
+                                </a>
                         )}
                     </div>
                 </C.ProjectArea>
-
             </C.Container>
         </Theme>
     )
