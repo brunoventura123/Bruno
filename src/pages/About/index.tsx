@@ -2,6 +2,7 @@ import * as C from './styles'
 import { Theme } from '../../components/Theme'
 import { useEffect, useState } from 'react'
 import {Modal} from '../../components/Modal'
+import I from "../../../assets/images/eu.png"
 
 
 export const About = () => {
@@ -34,7 +35,7 @@ export const About = () => {
                         <button onClick={openModal} title="Mais informações sobre Bruno Ventura">SAIBA MAIS</button>
                     </C.TextArea>
                     <C.ImageArea move={move}>
-                        <img width="auto" height="100%" src="../../../assets/images/eu.png" alt="eu mesmo" />
+                        <img width="auto" height="100%" src={I} alt="eu mesmo" />
                     </C.ImageArea>
                 </C.Area>
                 {close &&

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Bg from '../../../assets/images/bg4.png'
 
 export const Container = styled.div`
     height:100vh;
@@ -9,5 +10,5 @@ export const Container = styled.div`
 export const PrincipalArea = styled.div`
     width:100%;
     height:calc(100% - 80px);
-    background-image:url('../../../assets/images/bg4.png');
+    background-image:url('${Bg}');
 `
