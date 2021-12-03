@@ -1,5 +1,5 @@
 import * as C from './styles'
-import Zap from "../../../assets/images/zap.png"
+import Zap from "../../assets/images/zap.png"
 
 export const Social = () => {
     return(

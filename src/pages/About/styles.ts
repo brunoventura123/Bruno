@@ -122,12 +122,11 @@ export const ModalArea = styled.div<{opacitys:number}>`
     display:flex;
     justify-content:center;
     align-items:center;
-    box-shadow:0px 0px 5px #f1c40f;
+    box-shadow:0px 0px 5px #fff;
     width:80vw;
     height:80vh;
     background-color:#222;
     border-radius:30px;
-    border:1px solid #f1c40f;
     padding:50px;
     color:#F3F3F3;
     z-index:999 !important;
@@ -159,7 +158,7 @@ export const Image = styled.div`
         width:200px;
         height:200px;
         border-radius:50%;
-        box-shadow:0px 0px 4px #f1c40f;
+        box-shadow:0px 0px 3px #fff;
         margin-bottom:20px;
     }
     p{
@@ -221,8 +220,6 @@ export const Text = styled.div`
         animation-name: about;
         animation-iteration-count: infinite;
     }
-    
-
     p{
         font-size:20px;
     }
