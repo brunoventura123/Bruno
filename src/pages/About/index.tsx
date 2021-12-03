@@ -42,7 +42,7 @@ export const About = () => {
                 <Modal modal={close}  onClick={()=>setClose(false)}>
                 <C.ModalArea opacitys={view}>
                     <C.Image>
-                        <img width="auto" height="100vh" src="../../../assets/images/eu.jpg" alt="" />
+                        <img width="auto" height="100vh" src={I} alt="" />
                         <p>Bruno Ventura<br/>Desenvolvedor web</p>
                     </C.Image>
                     <C.Text>
