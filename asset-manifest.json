@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.js": "/Bruno/static/js/main.88155a1c.chunk.js",
-    "main.js.map": "/Bruno/static/js/main.88155a1c.chunk.js.map",
-    "runtime-main.js": "/Bruno/static/js/runtime-main.7d09510b.js",
-    "runtime-main.js.map": "/Bruno/static/js/runtime-main.7d09510b.js.map",
+    "main.js": "/Bruno/static/js/main.c2c80751.chunk.js",
+    "main.js.map": "/Bruno/static/js/main.c2c80751.chunk.js.map",
+    "runtime-main.js": "/Bruno/static/js/runtime-main.ed40e299.js",
+    "runtime-main.js.map": "/Bruno/static/js/runtime-main.ed40e299.js.map",
     "static/css/2.0a9ec390.chunk.css": "/Bruno/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.c61a236e.chunk.js": "/Bruno/static/js/2.c61a236e.chunk.js",
-    "static/js/2.c61a236e.chunk.js.map": "/Bruno/static/js/2.c61a236e.chunk.js.map",
+    "static/js/2.8cdb8605.chunk.js": "/Bruno/static/js/2.8cdb8605.chunk.js",
+    "static/js/2.8cdb8605.chunk.js.map": "/Bruno/static/js/2.8cdb8605.chunk.js.map",
     "index.html": "/Bruno/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/Bruno/static/css/2.0a9ec390.chunk.css.map",
-    "static/js/2.c61a236e.chunk.js.LICENSE.txt": "/Bruno/static/js/2.c61a236e.chunk.js.LICENSE.txt",
+    "static/js/2.8cdb8605.chunk.js.LICENSE.txt": "/Bruno/static/js/2.8cdb8605.chunk.js.LICENSE.txt",
     "static/media/BATERIA.8147f28b.jpeg": "/Bruno/static/media/BATERIA.8147f28b.jpeg",
     "static/media/Creactjs.87455db6.jpg": "/Bruno/static/media/Creactjs.87455db6.jpg",
     "static/media/HTML-CSS.b7fce632.jpg": "/Bruno/static/media/HTML-CSS.b7fce632.jpg",
     "static/media/S-W.79289268.jpg": "/Bruno/static/media/S-W.79289268.jpg",
     "static/media/banco.c3e74a5a.jpg": "/Bruno/static/media/banco.c3e74a5a.jpg",
+    "static/media/bg4.7a0f7fb5.png": "/Bruno/static/media/bg4.7a0f7fb5.png",
     "static/media/bootstrap.f5c19f5f.jpg": "/Bruno/static/media/bootstrap.f5c19f5f.jpg",
     "static/media/calctroco.db16f2af.jpeg": "/Bruno/static/media/calctroco.db16f2af.jpeg",
     "static/media/calculator.543caae8.jpeg": "/Bruno/static/media/calculator.543caae8.jpeg",
@@ -22,6 +23,7 @@
     "static/media/certificado_JS.0168b436.jpg": "/Bruno/static/media/certificado_JS.0168b436.jpg",
     "static/media/certificado_TS.e044ba1c.jpg": "/Bruno/static/media/certificado_TS.e044ba1c.jpg",
     "static/media/clima.4d4f5d22.jpeg": "/Bruno/static/media/clima.4d4f5d22.jpeg",
+    "static/media/eu.9df36fe2.png": "/Bruno/static/media/eu.9df36fe2.png",
     "static/media/firebase.7520d590.jpg": "/Bruno/static/media/firebase.7520d590.jpg",
     "static/media/franquia.e22e1244.jpeg": "/Bruno/static/media/franquia.e22e1244.jpeg",
     "static/media/gallery.b1a99297.jpeg": "/Bruno/static/media/gallery.b1a99297.jpeg",
@@ -35,9 +37,9 @@
     "static/media/velha.aa043e3c.jpeg": "/Bruno/static/media/velha.aa043e3c.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7d09510b.js",
+    "static/js/runtime-main.ed40e299.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.c61a236e.chunk.js",
-    "static/js/main.88155a1c.chunk.js"
+    "static/js/2.8cdb8605.chunk.js",
+    "static/js/main.c2c80751.chunk.js"
   ]
 }
