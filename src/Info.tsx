@@ -8,6 +8,7 @@ export const Info = [
     {color:'#2f74c0',title: 'TypeScript', text: 'Se quer dar uma turbinada no seu JavaScript, o TypeScript é um potencializador para isso. Tipagem bem feita é com ele. Eu uso bastante em meus projetos.'},
     {color:'#8ad0f3',title: 'Webpack', text: 'Para dar aquela leveza quando subir seus sistemas e sites, nisso o webpack ajuda muito, empacota tudo bem certinho.'},
     {color:'#d9d9d9',title: 'Git/GitHub', text: 'Ter um sistema para controle de versões e ainda poder contar com a ajuda de outros desenvolvedores, com o Git e GitHub isso fica muito fácil.'},
-    {color:'#ffc400',title: 'Firebase', text: 'Essa plataforma do Google tem várias ferramentas que ajudam os desenvolvedores a criar aplicações de alta qualidade e performance. Inclusive usei ela nesse projeto.'}
+    {color:'#ffc400',title: 'Firebase', text: 'Essa plataforma do Google tem várias ferramentas que ajudam os desenvolvedores a criar aplicações de alta qualidade e performance. Inclusive usei ela nesse projeto.'},
+    {color:'#5678c5',title: 'Banco de Dados', text: ' Com um banco de dados, as informações podem ser facilmente acessadas, gerenciadas, modificadas, atualizadas, controladas e organizadas.'}
     
 ]
