@@ -15,7 +15,7 @@ export const Contact = () => {
     const [color, setColor] = useState('')
 
     const regName = /^([A-zÁ-ú]{2,})\s([A-zÁ-ú\s]{2,})$/g
-    const regEmail = /^([A-z0-9\-?]{1,})@([A-z0-9]{1,})\.([A-z0-9]{1,})(\.[A-z]{1,})?$/g
+    const regEmail = /^([A-z0-9.\-?]{1,})@([A-z0-9]{1,})\.([A-z0-9]{1,})(\.[A-z]{1,})?$/g
 
 
     useEffect(()=>{
