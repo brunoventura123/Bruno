@@ -33,7 +33,7 @@ export const TextArea = styled.div<{move:boolean}>`
 
     h1{
         font-size:70px;
-        font-weight:bold;
+        font-weight:normal;
         margin-bottom:20px;
         
     }
@@ -115,6 +115,7 @@ export const Modal = styled.div<{modal:boolean, opacitys:number}>`
     align-items:center;
     z-index:999;
     transition:all ease .5s;
+    
 `
 export const ModalArea = styled.div<{opacitys:number}>`
     transition:all ease .5s;
@@ -166,6 +167,7 @@ export const Image = styled.div`
         font-weight:bold;
         color:#f3f3f3;
         text-align:center;
+        font-family:sans serif;
         
     }
 
@@ -219,6 +221,7 @@ export const Text = styled.div`
         animation-duration: 1.5s;
         animation-name: about;
         animation-iteration-count: infinite;
+        font-family:sans serif;
     }
     p{
         font-size:20px;

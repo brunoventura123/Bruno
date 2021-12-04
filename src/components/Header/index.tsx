@@ -21,7 +21,7 @@ export function Header() {
     return(
         <C.Container>
         <Navbar className="nav" color="transparent" dark expand="md">
-            <NavbarBrand href="#"><img width="200px" height="auto" src={Logo} alt="Logo do site" /></NavbarBrand>
+            <NavbarBrand to="/"><img width="200px" height="auto" src={Logo} alt="Logo do site" /></NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="mr-auto" navbar>

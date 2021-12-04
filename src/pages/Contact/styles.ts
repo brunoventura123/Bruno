@@ -163,6 +163,10 @@ export const SocialArea = styled.div`
     height: 80%;
     padding:0 30px;
     text-align:center;
+
+    h2{
+        font-family:sans serif;
+    }
     
     .socialarea{
         display:flex;
@@ -170,6 +174,8 @@ export const SocialArea = styled.div`
         margin-top: 100px;
         padding:0 100px;
         text-align:center;
+
+        
 
         a{
             text-decoration:none;
