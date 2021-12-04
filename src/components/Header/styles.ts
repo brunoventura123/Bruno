@@ -23,12 +23,14 @@ export const Container = styled.div`
         font-size:18px;
         margin-bottom:-26px;
 
+
         li{
             margin-right:30px;
+            font-size:16px;
 
             a {
                 color:#FFF !important;
-                padding:10px;
+                padding:13px;
                 display:inline-block;
                 cursor:pointer;
                 border-bottom:2px solid transparent;
@@ -50,7 +52,7 @@ export const Container = styled.div`
         }
     }
     @media(max-width:1060px){
-        padding: 0 20px;
+        padding: 0 10px;
 
         nav img{
             width:150px;
@@ -61,7 +63,8 @@ export const Container = styled.div`
             margin-bottom:-18px;
 
             li {
-                margin-right:12px;
+                margin-right:2px;
+                padding:10px 0;
                 font-size:15px;
             }
         }

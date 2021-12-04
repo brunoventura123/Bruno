@@ -225,6 +225,8 @@ export const Text = styled.div`
     }
     p{
         font-size:20px;
+        font-family: 'Sriracha', cursive;
+        color:#ccc;
     }
 
     @media(max-width:1100px){

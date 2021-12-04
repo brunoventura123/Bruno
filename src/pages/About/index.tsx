@@ -48,7 +48,7 @@ export const About = () => {
                         <C.Text>
                             <h2>Sobre mim</h2>
                             <p>Sou Bruno Ventura natural de Belo Horizonte. Tenho 37 anos e trabalho atualmente como Professor pelo Estado. Curso inglês desde abril de 2021, sei o inglês básico.
-                                Tenho conhecimento em HTML5, CSS3, Bootstrap5, SASS, Wepack, React, Typescript, Git/GitHub, Firebase, expressão regular e bancos de dados.
+                                Tenho conhecimento em HTML5, CSS3, Bootstrap5, SASS, Webpack, React, Typescript, Git/GitHub, Firebase, expressão regular e bancos de dados.
                                 Fiz curso de programação pela b7web.com.br, onde aprendi essas tecnologias e tenho desenvolvido vários projetos, colocando
                                 em prática todo conhecimento adquirido. Como observado estou focado no front-end, mas atualmente tenho iniciado meus estudos
                                 no back-end para entender o funcionamento por trás dos panos. Todo esse portifolio foi feito usando React e algumas outras bibliotecas, além do

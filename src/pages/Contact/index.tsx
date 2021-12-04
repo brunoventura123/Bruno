@@ -19,7 +19,7 @@ export const Contact = () => {
 
 
     useEffect(()=>{
-        if(message !== '' && regName.test(name) && regEmail.test(email)){
+        if(regName.test(name) && regEmail.test(email) && message !== '' ){
             setColor('2px solid green')
         } else {
             setColor('2px solid transparent')
@@ -27,7 +27,7 @@ export const Contact = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[name, email, message])
 
-    let data = `Name: ${name} Email: ${email} Message: ${message}`
+    let data = `Name: ${name}, Email: ${email}, Message: ${message}.`
     const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
