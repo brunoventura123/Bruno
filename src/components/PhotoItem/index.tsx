@@ -15,7 +15,6 @@ export const PhotoItem = ({ url, onClick}:Props) => {
     return(
         <C.Container onClick={handleClick}>
             <img  src={url} alt="" />
-          
         </C.Container>
     )
 }
