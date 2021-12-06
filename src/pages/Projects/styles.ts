@@ -7,6 +7,8 @@ export const Container = styled.div`
     overflow:auto; 
     padding:20px 20px;
 
+    
+
     &::-webkit-scrollbar {
         width: 12px;               
       }

@@ -9,7 +9,6 @@ export const Container = styled.div`
     align-items:center;
     justify-content:center;
     flex-direction:column;
-    overflow:auto;
     height:100%;
 
     .course{
@@ -30,20 +29,37 @@ export const ProjectArea = styled.div`
     justify-content:center;
     padding-top:30px;
     max-width:100%;
+    flex-wrap:wrap;
+    overflow:auto;
 
-    .carousel-size{
-        width:55%;
-        heigth:auto;
-    }
+    &::-webkit-scrollbar {
+        width: 12px;               
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: #4c4c4c; 
+        border-radius:3px;       
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background-color: #000;    
+        border-radius: 10px;       
+        border: 3px solid #4c4c4c;  
+      }
 
-    .size {
-        width: 100%;
-        height:auto;
-    }
-
-    @media(max-width:770px){
-        .carousel-size{
-            width:70%
+    .certItem{
+        margin:5px;
+        
+        img{
+            border-radius:10px;
+            width:430px;
         }
     }
+
+    @media(max-width:450px){
+        .certItem img{
+            width:300px;
+        }
+    }
+   
 `

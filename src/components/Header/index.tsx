@@ -15,31 +15,30 @@ import { useState } from 'react'
 
 export function Header() {
     const [isOpen, setIsOpen] = useState(false);
-    const toggle = () => setIsOpen(!isOpen);
 
    
     return(
         <C.Container>
         <Navbar className="nav" color="transparent" dark expand="md">
             <NavbarBrand to="/"><img width="200px" height="auto" src={Logo} alt="Logo do site" /></NavbarBrand>
-            <NavbarToggler onClick={toggle} />
+            <NavbarToggler onClick={()=>setIsOpen(!isOpen)} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="mr-auto" navbar>
 
                     <NavItem>
-                            <NavLink to="/" activeClassName="selected">Sobre Mim</NavLink>
+                        <NavLink to="/aboutme">Sobre Mim</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to="/technology" activeClassName="selected">Tecnologias</NavLink>
+                        <NavLink to="/technology">Tecnologias</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to="/projects" activeClassName="selected">Projetos</NavLink>
+                        <NavLink to="/projects">Projetos</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to="/certificates" activeClassName="selected">Certificados</NavLink>
+                        <NavLink to="/certificates">Certificados</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to="/contact" activeClassName="selected">Contatos</NavLink>
+                        <NavLink to="/contact">Contatos</NavLink>
                     </NavItem>
                     
                 </Nav>
