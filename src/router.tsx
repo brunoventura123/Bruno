@@ -9,7 +9,7 @@ import { Certificates } from "./pages/Certificates";
 export const Router = () => {
     return(
         <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <Route  path="/aboutme" exact component={About} />
+            <Route  path="/bruno" exact component={About} />
             <Route path="/technology"  component={Technology} />
             <Route path="/projects"  component={Projects} />
             <Route path="/contact"  component={Contact} />
