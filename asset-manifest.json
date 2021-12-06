@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Bruno/static/css/main.90d1aefa.chunk.css",
-    "main.js": "/Bruno/static/js/main.2eea4080.chunk.js",
-    "main.js.map": "/Bruno/static/js/main.2eea4080.chunk.js.map",
+    "main.js": "/Bruno/static/js/main.aae504e5.chunk.js",
+    "main.js.map": "/Bruno/static/js/main.aae504e5.chunk.js.map",
     "runtime-main.js": "/Bruno/static/js/runtime-main.ed40e299.js",
     "runtime-main.js.map": "/Bruno/static/js/runtime-main.ed40e299.js.map",
     "static/css/2.0a9ec390.chunk.css": "/Bruno/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.089c3e8b.chunk.js": "/Bruno/static/js/2.089c3e8b.chunk.js",
-    "static/js/2.089c3e8b.chunk.js.map": "/Bruno/static/js/2.089c3e8b.chunk.js.map",
+    "static/js/2.8b3a1521.chunk.js": "/Bruno/static/js/2.8b3a1521.chunk.js",
+    "static/js/2.8b3a1521.chunk.js.map": "/Bruno/static/js/2.8b3a1521.chunk.js.map",
     "index.html": "/Bruno/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/Bruno/static/css/2.0a9ec390.chunk.css.map",
     "static/css/main.90d1aefa.chunk.css.map": "/Bruno/static/css/main.90d1aefa.chunk.css.map",
-    "static/js/2.089c3e8b.chunk.js.LICENSE.txt": "/Bruno/static/js/2.089c3e8b.chunk.js.LICENSE.txt",
+    "static/js/2.8b3a1521.chunk.js.LICENSE.txt": "/Bruno/static/js/2.8b3a1521.chunk.js.LICENSE.txt",
     "static/media/BATERIA.8147f28b.jpeg": "/Bruno/static/media/BATERIA.8147f28b.jpeg",
     "static/media/Creactjs.87455db6.jpg": "/Bruno/static/media/Creactjs.87455db6.jpg",
     "static/media/HTML-CSS.b7fce632.jpg": "/Bruno/static/media/HTML-CSS.b7fce632.jpg",
@@ -41,8 +41,8 @@
   "entrypoints": [
     "static/js/runtime-main.ed40e299.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.089c3e8b.chunk.js",
+    "static/js/2.8b3a1521.chunk.js",
     "static/css/main.90d1aefa.chunk.css",
-    "static/js/main.2eea4080.chunk.js"
+    "static/js/main.aae504e5.chunk.js"
   ]
 }
