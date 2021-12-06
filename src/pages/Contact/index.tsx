@@ -49,7 +49,7 @@ export const Contact = () => {
 
     const handleSend = () => {
         setSend(false)
-        history.push('/')
+        history.push('/bruno')
     }
 
     return(
