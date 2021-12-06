@@ -45,7 +45,7 @@ export const Container = styled.div`
             }
             
         }
-        .activ{
+        .active{
             color: #f1c40f !important; 
             border-bottom:2px solid #f1c40f;
             opacity:1;
