@@ -31,13 +31,11 @@ export const ProjectArea = styled.div`
     justify-content:space-between;
     align-items:center;
 
-    
-
-
     h3{
         color:#FFF;
         text-align:center;
         text-shadow:0px 0px 3px #000;
+        margin:0px 0 30px 0;
     }
     .project{
         border-radius:5px;
@@ -87,7 +85,16 @@ export const ProjectArea = styled.div`
             }
         }
     }
+
+    @media(max-width:1000px){
+        h3{
+            font-size:24px;
+        }
+    }
     @media(max-width:450px){
+        h3{
+            font-size:20px;
+        }
         .project a{
             margin-right:0;
         }

@@ -117,11 +117,12 @@ export const FormArea = styled.div<{colors:string}>`
             resize:none;
             border:${props=>props.colors};
             border-radius:5px;
-            color:#02044A;
+            color:#FFF;
             
         }
         input::placeholder{
             color: #FFF;
+            background-color: #666;
         }
         textarea::placeholder{
             color: #FFF;

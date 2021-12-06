@@ -4,10 +4,13 @@ import Linkedin from '../../assets/images/linkedin.png'
 import Insta from '../../assets/images/insta.png'
 import Git from '../../assets/images/git.png'
 import React, { FormEvent, useEffect, useState } from 'react'
+import { useHistory } from 'react-router'
+
 
 
 export const Contact = () => {
-
+    const history = useHistory()
+    
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
@@ -16,7 +19,6 @@ export const Contact = () => {
 
     const regName = /^([A-zÁ-ú]{2,})\s([A-zÁ-ú\s]{2,})$/g
     const regEmail = /^([A-z0-9.\-?]{1,})@([A-z0-9]{1,})\.([A-z0-9]{1,})(\.[A-z]{1,})?$/g
-
 
     useEffect(()=>{
         if(regName.test(name) && regEmail.test(email) && message !== '' ){
@@ -37,6 +39,7 @@ export const Contact = () => {
             setEmail('')
             setMessage('')
             console.log(data)
+           
      } else{
             alert('Informações estão incorretas, por favor digite novamente!')
             setName('')
@@ -46,6 +49,7 @@ export const Contact = () => {
 
     const handleSend = () => {
         setSend(false)
+        history.push('/')
     }
 
     return(
@@ -55,8 +59,8 @@ export const Contact = () => {
                     <div className="contactArea">
                     <div className="contact">FORMULÁRIO DE CONTATO</div>
                     
-                    <form action="https://api.staticforms.xyz/submit" method="POST" id="form" onSubmit={handleSubmit}>
-                        <input type="hidden" name="accessKey" value="d4c3ba57-5462-4ff7-9898-c641b370edf8"/>
+                    <form  action="https://formsubmit.co/brunoventura70@gmail.com" method="POST" id="form" onSubmit={handleSubmit}>
+                        
                         <input 
                             required
                             type="text" 
