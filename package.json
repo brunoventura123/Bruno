@@ -2,7 +2,7 @@
   "name": "Bruno",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://brunoventura123.github.io/Bruno",
+  "homepage": "https://brunoventura123.github.io/Bruno/bruno",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
