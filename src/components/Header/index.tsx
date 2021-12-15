@@ -29,7 +29,7 @@ export function Header() {
                         <NavLink to="/">Sobre Mim</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to="/technology">Tecnologias</NavLink>
+                        <NavLink to="/technology">Tecnologias </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink to="/projects">Projetos</NavLink>
