@@ -19,14 +19,14 @@ export function Header() {
    
     return(
         <C.Container>
-        <Navbar className="nav" color="transparent" dark expand="md">
+        <Navbar className="nav" color="transparent" dark expand="md" >
             <NavbarBrand to="/"><img width="200px" height="auto" src={Logo} alt="Logo do site" /></NavbarBrand>
             <NavbarToggler onClick={()=>setIsOpen(!isOpen)} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="mr-auto" navbar>
 
                     <NavItem>
-                        <NavLink to="/">Sobre Mim</NavLink>
+                        <NavLink activeClassName='active' to="/">Sobre Mim</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink to="/technology">Tecnologias</NavLink>

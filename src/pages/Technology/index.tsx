@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 import * as Photos from '../../services/photos'
 import {Photo} from '../../types/Photo'
 import {PhotoItem} from '../../components/PhotoItem'
-import {Info} from '../../Info'
+import {Info} from './Info'
 
 
 
@@ -37,8 +37,7 @@ const getPhotos = async (info: string | undefined)=>{
                 <C.SliderArea>
                     {loading && 
                         <C.ScreeanWarning>
-                            <div className="emoji">✋</div>
-                            <div>Carregando...</div>
+                            <div className="c-loader"></div>
                         </C.ScreeanWarning>
                     }
                     {!loading && photos.length > 0 &&
