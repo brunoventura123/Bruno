@@ -1,13 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import * as C from './styles'
 import { Theme } from '../../components/Theme'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import {Photo} from './photo'
 
-type Movie = {
-    titulo:string;
-    avatar:string
-}
+
 
 export const Projects = () => {
    

@@ -26,7 +26,7 @@ export function Header() {
                 <Nav className="mr-auto" navbar>
 
                     <NavItem>
-                        <NavLink activeClassName='active' to="/">Sobre Mim</NavLink>
+                        <NavLink to="/">Sobre Mim</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink to="/technology">Tecnologias</NavLink>

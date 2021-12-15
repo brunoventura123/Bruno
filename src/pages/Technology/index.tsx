@@ -27,7 +27,7 @@ const getPhotos = async (info: string | undefined)=>{
         
     useEffect(()=>{
         getPhotos(info)
-    },[])
+    },[info])
 
     
 
