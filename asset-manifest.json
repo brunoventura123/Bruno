@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Bruno/static/css/main.90d1aefa.chunk.css",
-    "main.js": "/Bruno/static/js/main.8577b6c9.chunk.js",
-    "main.js.map": "/Bruno/static/js/main.8577b6c9.chunk.js.map",
+    "main.js": "/Bruno/static/js/main.8c16c20c.chunk.js",
+    "main.js.map": "/Bruno/static/js/main.8c16c20c.chunk.js.map",
     "runtime-main.js": "/Bruno/static/js/runtime-main.ed40e299.js",
     "runtime-main.js.map": "/Bruno/static/js/runtime-main.ed40e299.js.map",
     "static/css/2.0a9ec390.chunk.css": "/Bruno/static/css/2.0a9ec390.chunk.css",
@@ -16,6 +16,7 @@
     "static/media/Creactjs.87455db6.jpg": "/Bruno/static/media/Creactjs.87455db6.jpg",
     "static/media/HTML-CSS.b7fce632.jpg": "/Bruno/static/media/HTML-CSS.b7fce632.jpg",
     "static/media/S-W.79289268.jpg": "/Bruno/static/media/S-W.79289268.jpg",
+    "static/media/analise.0f3f3d2b.jpeg": "/Bruno/static/media/analise.0f3f3d2b.jpeg",
     "static/media/banco.c3e74a5a.jpg": "/Bruno/static/media/banco.c3e74a5a.jpg",
     "static/media/bg4.7a0f7fb5.png": "/Bruno/static/media/bg4.7a0f7fb5.png",
     "static/media/bootstrap.f5c19f5f.jpg": "/Bruno/static/media/bootstrap.f5c19f5f.jpg",
@@ -43,6 +44,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.8b3a1521.chunk.js",
     "static/css/main.90d1aefa.chunk.css",
-    "static/js/main.8577b6c9.chunk.js"
+    "static/js/main.8c16c20c.chunk.js"
   ]
 }
