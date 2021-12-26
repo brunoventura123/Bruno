@@ -4,6 +4,7 @@ import { Technology } from "./pages/Technology";
 import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
 import { Certificates } from "./pages/Certificates";
+import { NotFound } from "./pages/NotFound";
 
 
 export const Router = () => {
@@ -14,6 +15,7 @@ export const Router = () => {
             <Route path="/projects"  component={Projects} />
             <Route path="/contact"  component={Contact} />
             <Route path="/certificates"  component={Certificates} />
+            <Route path="*" component={NotFound} />
         </BrowserRouter>
     )
 }
