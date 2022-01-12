@@ -79,9 +79,16 @@ export const InfoArea = styled.div`
         margin-right:10px;
         margin-bottom:10px;
         font-weight:bold;
+        transition:all ease .5s;
+        opacity:0.9;
 
         &:hover{
-            opacity:0.8;
+            opacity:1;
+            transform: scale(1.1);
+            padding:10px 30px;
+            box-shadow:0px 0px 10px #02044A;
+            text-shadow:0px 0px 10px #fff;
+            color:#FFF;
         }
         
     }
@@ -118,24 +125,61 @@ export const ScreeanWarning = styled.div`
     justify-content:center;
     align-items:center;
 
-    .c-loader {
-        animation: is-rotating 1s infinite;
-        border: 6px solid #e5e5e5;
-        border-radius: 50%;
-        border-top-color: #51d4db;
-        height: 50px;
-        width: 50px;
-      }
-      
-      @keyframes is-rotating {
-        to {
-          transform: rotate(1turn);
-        }
-      }
 
-    .emoji{
-        font-size:50px;
-        margin-bottom:20px;
+    .loding {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+
+     span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-left: 2px solid #e400ff;
+        border-right: 2px solid #00ff5a;
+        pointer-events: none;
+        animation: rotates 5s linear infinite;
+    }
+
+     span:nth-child(1) {
+        border-radius: 38% 62% 64% 36% / 43% 35% 65% 57%;
+    }
+
+    span:nth-child(2) {
+        animation-direction: reverse;
+        border-radius: 41% 59% 40% 60% / 65% 66% 34% 35%;
+    }
+
+     span:nth-child(3) {
+        animation-duration: 3s;
+        border-radius: 38% 62% 64% 36% / 43% 35% 65% 57%;
+    }
+     span:nth-child(4) {
+        animation-duration: 4s;
+        animation-direction: reverse;
+        border-radius: 38% 62% 64% 36% / 43% 35% 65% 57%;
+    }
+
+     h2 {
+        color: white;
+        font-family: cursive;
+        font-weight: 500;
+    }
+}
+    @keyframes rotates {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
     }
 `
 export const PhotoList = styled.div`

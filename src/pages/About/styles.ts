@@ -23,11 +23,11 @@ export const Area = styled.div`
     }
 `
 
-export const TextArea = styled.div<{move:boolean}>`
+export const TextArea = styled.div<{ move: boolean }>`
     font-family: 'Open Sans', sans-serif;
     color:#FFF;
-    margin-left:${props=>props.move ? '10%' : '-50%'};
-    opacity:${props=>props.move ? 1 : .3};
+    margin-left:${props => props.move ? '10%' : '-50%'};
+    opacity:${props => props.move ? 1 : .3};
     transition:all ease 2s;
     width:50%;
 
@@ -60,9 +60,14 @@ export const TextArea = styled.div<{move:boolean}>`
         color: #02044A;
         font-weight:bold;
         border-radius:22px;
+        transition:all ease .5s;
 
         &:hover{
             opacity:0.9;
+            transform: scale(1.1);
+            padding:10px 30px;
+            box-shadow:0px 0px 10px #f1c40f;
+            text-shadow:0px 0px 10px #fff;
         }
     }
     @media(max-width:760px){
@@ -86,12 +91,12 @@ export const TextArea = styled.div<{move:boolean}>`
     }
 `
 
-export const ImageArea = styled.div<{move:boolean}>`
+export const ImageArea = styled.div<{ move: boolean }>`
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-right:${props=>props.move ? '10%' : '-50%'};
-    opacity:${props=>props.move ? 1 : .3};
+    margin-right:${props => props.move ? '10%' : '-50%'};
+    opacity:${props => props.move ? 1 : .3};
     transition:all ease 2s;
     width:50%;
     height:100%;
@@ -101,9 +106,9 @@ export const ImageArea = styled.div<{move:boolean}>`
     }
 
 `
-export const Modal = styled.div<{modal:boolean, opacitys:number}>`
-    display:${props=>props.modal ? 'none' : 'flex'};
-    opacity:${props=>props.opacitys};
+export const Modal = styled.div<{ modal: boolean, opacitys: number }>`
+    display:${props => props.modal ? 'none' : 'flex'};
+    opacity:${props => props.opacitys};
     background-color:rgba(0,0,0, 0.7);
     position:absolute;
     left:0;
@@ -117,9 +122,9 @@ export const Modal = styled.div<{modal:boolean, opacitys:number}>`
     transition:all ease .5s;
     
 `
-export const ModalArea = styled.div<{opacitys:number}>`
+export const ModalArea = styled.div<{ opacitys: number }>`
     transition:all ease .5s;
-    opacity:${props=>props.opacitys};
+    opacity:${props => props.opacitys};
     display:flex;
     justify-content:center;
     align-items:center;

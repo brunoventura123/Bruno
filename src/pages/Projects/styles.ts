@@ -57,7 +57,7 @@ export const ProjectArea = styled.div`
             cursor:pointer;
 
             &:hover{
-                transform:scale(1.1);
+                transform:translateY(-20px) translateX(30px) scale(1.1);
             }
         }
         img{
@@ -68,7 +68,7 @@ export const ProjectArea = styled.div`
         }
         .desc{
             position:relative;
-            background-color:rgba(0,0,0,0.8);
+            background-color:rgba(0,0,0,0.7);
             color:#FFF;
             width:300px;
             height:150px;
