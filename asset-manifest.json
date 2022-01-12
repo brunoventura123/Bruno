@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Bruno/static/css/main.90d1aefa.chunk.css",
-    "main.js": "/Bruno/static/js/main.45d6896a.chunk.js",
-    "main.js.map": "/Bruno/static/js/main.45d6896a.chunk.js.map",
+    "main.js": "/Bruno/static/js/main.73702695.chunk.js",
+    "main.js.map": "/Bruno/static/js/main.73702695.chunk.js.map",
     "runtime-main.js": "/Bruno/static/js/runtime-main.ed40e299.js",
     "runtime-main.js.map": "/Bruno/static/js/runtime-main.ed40e299.js.map",
     "static/css/2.0a9ec390.chunk.css": "/Bruno/static/css/2.0a9ec390.chunk.css",
@@ -25,7 +25,7 @@
     "static/media/certificado_JS.0168b436.jpg": "/Bruno/static/media/certificado_JS.0168b436.jpg",
     "static/media/certificado_TS.e044ba1c.jpg": "/Bruno/static/media/certificado_TS.e044ba1c.jpg",
     "static/media/clima.4d4f5d22.jpeg": "/Bruno/static/media/clima.4d4f5d22.jpeg",
-    "static/media/eu.9df36fe2.png": "/Bruno/static/media/eu.9df36fe2.png",
+    "static/media/eu.e0c2a396.png": "/Bruno/static/media/eu.e0c2a396.png",
     "static/media/firebase.7520d590.jpg": "/Bruno/static/media/firebase.7520d590.jpg",
     "static/media/franquia.e22e1244.jpeg": "/Bruno/static/media/franquia.e22e1244.jpeg",
     "static/media/gallery.b1a99297.jpeg": "/Bruno/static/media/gallery.b1a99297.jpeg",
@@ -44,6 +44,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.64c6769d.chunk.js",
     "static/css/main.90d1aefa.chunk.css",
-    "static/js/main.45d6896a.chunk.js"
+    "static/js/main.73702695.chunk.js"
   ]
 }
